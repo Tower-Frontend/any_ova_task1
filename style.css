@@ -1,0 +1,60 @@
+.container
+{
+    border: 1px solid red;
+    margin: auto;
+    max-width: 1486px;
+}
+.header_container
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.content_header
+{
+    display:flex;
+    flex-direction: row;
+    margin: 20px 0px 10px 30px;
+}
+.logo
+{
+    display: flex;
+    gap: 14px;
+}
+.manager
+{
+    align-self: center;
+    font-family: 'Cormorant Garamond', serif;    
+    font-size: 30px;
+    color: #2947a9	;
+}
+.nav_text
+{
+ display: flex;
+ font-family: 'Montserrat' ;
+ font_weight:700;
+gap: 50px; 
+text-decoration: none;
+list-style-type: none;
+margin-bottom: 0px;
+}
+.navi_link
+{
+    cursor: pointer;
+    text-decoration: none ;
+    color: darkblue;
+    transition: all ease-in-out 1s;
+}
+.special_link
+{
+    color: rgb(74, 156, 214);
+}
+.navi_link:hover
+{
+    text-decoration: underline;
+}
+.gallery
+{
+    
+}
