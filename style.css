@@ -158,7 +158,15 @@ gap: 30px;
     width:50%;
     gap :10px;
     cursor: pointer;
+    transition: all ease-in-out .1s;
+
 }
+.gallery__contol:hover
+{
+    background-color:  #102b82;
+}
+
+
 .gallery__contol-arrow
 {
     width: 26px;
@@ -169,9 +177,8 @@ gap: 30px;
 background-color: #2947a9;
 border: 1px solid red;
 padding: 20px 0 50px ;
-position: absolute;
-transform: translate(100%, 0) ;
-min-width: 500px;
+position: relative;
+max-width: 500px;
 }
 .manager-wrapper
 {
@@ -218,7 +225,16 @@ gap: 150px;
     background-color: #2947a9;
     padding: 10px 25px ;
     border-radius: 10px;
+    cursor: pointer;
 }
+.task-manager-btn:hover
+{
+    background-color: #102b82;
+
+}
+
+
+
 .task-manager-input
 {
    flex-grow: 2;
@@ -284,7 +300,14 @@ color: #A3AAC2;
 {
     background-color:#C2C7D6 ;
 }
-
+.task-manager-item:active
+{
+    background-color: #E0E3EB;
+}
+.task-manager-item--done
+{
+    background-color: #A3AAC2;
+}
 .task-priority{
     border-radius: 50%;
     height: 20px;
@@ -307,10 +330,119 @@ background-color: var(--priority-low);
     background-color: var(--priority-high);
 
 }
+
+.task-text--done
+{
+    text-decoration: line-through;
+}
+
+
 .contacts
 {
-    position: absolute;
+    position: relative;
     border: 1px solid red;
     padding: 60px 0;
     background-color: #E0E3EB;
+}
+.contacts-wrapper
+{
+    margin: auto;
+    border: 1px solid red;
+
+    max-width:750px ;
+}
+.contacts-container
+{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 40px;
+}
+.contacts-body
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 72%;
+
+}
+.contacts-header
+{
+text-align: center;
+font-family: 'Cormorant Garamond', serif;
+font-size: 48px;
+font-weight: bold;
+}
+.contacts-text
+{
+text-align: center;
+font-family: 'Montserrat' ;
+font-size: 20px;
+}
+.contacts-form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Montserrat' ;
+
+}
+.contacts-info
+{
+    display: flex;
+    gap:1px;
+}
+.contacts-name, .contacts-email
+{
+    border: none;
+    border-radius: 4px;
+    padding: 10px 8px;
+}
+.contacts-email{
+width: 78%;
+flex-grow: 3;
+}
+.contacts-name{
+    width: 22%;
+    flex-grow: 3;
+}
+.contacts-message
+{
+    border: none;
+    border-radius: 4px;
+    appearance: none;
+    min-height: 135px;
+    max-width: 100%;
+    padding: 10px 8px;
+}
+.contacts-btn
+{
+    width: 100%;
+    cursor: pointer;
+     padding: 16px 0 ;
+     text-align: center;
+     background-color: #2947a9;
+     color:#ffffff;
+     transition: all ease-in-out .1s;
+
+}
+.contacts-btn:hover
+{
+    background-color: #102b82;
+}
+.footer
+{
+padding: 25px 0;
+border: 1px solid red;
+background-color: #2947a9;
+}
+.footer-wrapper
+{
+    margin: auto;
+    width: 80%;
+}
+.footer-text
+{
+    font-family: 'Cormorant Garamond', serif;
+     color: #ffffff;
 }
